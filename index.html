@@ -315,9 +315,32 @@
     width:46px; height:46px; border-radius:50%; background:rgba(243,236,220,.06); border:1px solid rgba(243,236,220,.2);
     display:flex; align-items:center; justify-content:center;
   }
-  .info-icon svg{width:19px; height:19px; stroke:var(--gold-soft);}
-  .info-row .label{color:rgba(243,236,220,.55); font-size:12.5px; margin-bottom:3px;}
-  .info-row .value{color:var(--white); font-size:16px; font-weight:600;}
+  ..info-icon{
+  width:68px;
+  height:68px;
+  border-radius:20px;
+  background:linear-gradient(
+    135deg,
+    #2F4156,
+    #567C8D
+  );
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  box-shadow:0 15px 30px rgba(47,65,86,.15);
+  transition:.3s;
+}
+
+.info-icon:hover{
+  transform:translateY(-5px);
+}
+
+.info-icon svg{
+  width:28px;
+  height:28px;
+  stroke:white;
+}
 
   /* ---------- footer ---------- */
   footer{background:var(--navy-deep); padding:48px 0 36px; border-top:1px solid rgba(243,236,220,.08);}
